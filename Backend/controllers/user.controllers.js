@@ -17,6 +17,7 @@ export const registerUser = async (req, res, next) => {
     firstname,
     lastname,
     email,
+    email,
     password: hashedPassword,
   });
   const token = user.generateAuthToken();
